@@ -1,7 +1,18 @@
-const name_e = " Madhura ";
-let password = "1234"
-email = "abc@gmail.com"
-let edc;
+let number = 20;
+let string = "kfhkdjfhdkf";
+let state = null;
+let roll_no ;
 
-console.log(name_e);
-console.table([name_e,password,email,edc]);
+console.table([typeof number , typeof string , typeof state, typeof roll_no])
+//data types of "null" is always object .
+//datatype of undefined is always undefined.
+
+//datatyes:-
+// number
+// string
+// null
+// undefined
+// Symbol
+// BigInt
+
+// object :- non primitive data type
