@@ -27,3 +27,32 @@ console.log(date2.toString());
 
 let date3 = new Date("12-12-2023")//MM-DD-YY
 console.log(date3.toString());
+
+//To get the millisecond of the date.
+
+let time = Date.now();
+console.log(time)
+//Date.now() returns the number of milliseconds elapsed since January 1, 1970 (the Unix epoch).
+// This value is logged to the console.
+
+// To get the time(millisecond) from the Date 
+console.log(date3.getTime());
+
+//To convert millisecond to second
+
+console.log(Math.floor((date3.getTime())/1000));
+
+
+//Data type of date is object .
+ console.log(typeof(date3));//object
+
+ // TO get the specific month , day or other information fro that date 
+ console.log(date3.getDate())
+ console.log(date3.getDay());
+ console.log(date3.getFullYear());
+ //and many more
+
+ //To geth the more specific value.
+ console.log(date3.toLocaleString('default', { weekday : "long"}));
+ 
+
