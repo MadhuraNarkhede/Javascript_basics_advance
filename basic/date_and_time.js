@@ -53,6 +53,6 @@ console.log(Math.floor((date3.getTime())/1000));
  //and many more
 
  //To geth the more specific value.
- console.log(date3.toLocaleString('default', { weekday : "long"}));
+ console.log(date3.toLocaleString('default', { weekday : "long"}));//tuesday //Give the weekday in long format
  
 
