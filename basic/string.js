@@ -49,3 +49,5 @@ console.log(gameName.split('-'));// to split the string in array in the form of 
 
 const string1 = "Madhura aLahu aNarkhede" ;
 console.log(string1.split(' a'));
+
+// for more information of string visit "javascript mdn"
