@@ -1,7 +1,7 @@
 //objects are created using literlas and constructor(singleton).
 //"Object.create" is mainly used to create object in the form of constructor as singleton.
 
-//Object Literals :-
+//Object Literals :-//Non Singleton object.
 //Objects are mainly declared in key value pair , where key are the prorpertities usaully in the data type of string , while values consisits of any data type as 
 //number , string ,,as well as array or another object in it.
 
