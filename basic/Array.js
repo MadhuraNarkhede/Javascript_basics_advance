@@ -60,10 +60,10 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
 
-// const allHeros = marvel_heros.concat(dc_heros)
+// const allHeros = marvel_heros.concat(dc_heros)//mainly allows to merge new array and gives whole new array as the output.
 // console.log(allHeros);
 
-const all_new_heros = [...marvel_heros, ...dc_heros]
+const all_new_heros = [...marvel_heros, ...dc_heros]//spread operator(...) , spread the element of array as a single element.
 
 // console.log(all_new_heros);
 
