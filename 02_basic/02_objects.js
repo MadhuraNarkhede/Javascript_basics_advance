@@ -1,65 +1,87 @@
-//objects are created using literlas and constructor(singleton).
-//"Object.create" is mainly used to create object in the form of constructor as singleton.
+ //Object declared as singleton
+ const tinderuse = new Object //singleton object
+//  const tinderuse = {}//sobject made using literal nt singleton.
 
-//Object Literals :-//Non Singleton object.
-//Objects are mainly declared in key value pair , where key are the prorpertities usaully in the data type of string , while values consisits of any data type as 
-//number , string ,,as well as array or another object in it.
+const symbol = Symbol();
+tinderuse.id = "123";
+tinderuse.name = "Madhura "
+tinderuse.email = "madhura@yahoo.com"
+tinderuse[symbol]="123";
 
-const mysym = Symbol();//Use to define the symbol
-const myObj = {
-    name : "Madhura",
-    age : 20 ,
-    location : "Pune",
-    email : "abc@gmail.com",
-    isLoggedIn : false,
-    lastLoggeddays : ["Monday", "Tuesday"],
-    [mysym]:"mykey1",//Symbol value has been declared
-    "fullname":"Madhura Lahu Narkhede",//key is mentioned as the string here.
+console.log(tinderuse)
 
+//Declare various object inside the object .
+const complexObj = {
+    id : 123,
+    fullname : {
+        username :{
+            first_name : "Madhura",
+            last_name : "Narkhede",
+        }
+    }
 };
-console.log(myObj.name);//simple values of key is printed wu=ith the help if "." operator.
-console.log(myObj["fullname"]);//values has been printed , whose key has been mentioned as string in object and using "[" "]" thus syntax.
-console.log(myObj[mysym]);//Here , we have used " []" to print the value of symbol from object.
+console.log(complexObj);
+console.log(complexObj.fullname.username)
+console.log(complexObj.fullname.username.first_name)
+console.log(complexObj.fullname)//Thus we can access the elemnets in this way.
 
-// to make changes  in the objects.
-myObj.name="Narkhede";
-console.log(myObj);
+// to combine more than two object in one.
+const obj1 = { 1 :1,2:2};
+const obj2 = {3:3,4:4};
+const obj3 = Object.assign( {},obj1 , obj2);//it mainly merge two objects into one and make every element of merged objects as individual to appear as a element of new object.
+//here mainly all the elements of obj2 is added in obj1 . thus , obj3 === obj1.
+console.log(obj3);
 
-//Object.freeze(myObj);// frreze method doesnot allow any furhtur changes to be made in object.
-myObj.name="Swamini";
-console.log(myObj);
+const obj4 = {...obj1 , ...obj2};// Two object are joined with the help of spread operator.
+console.log(obj4);
+
+//Object are stored as elements in a array.
+const array = [ { id : 1 , email : "h@gmail.com"},{id : 2,email :"r@gmail.com"}];
+console.log(array[1].id);//Thus elemets are mainly accessed in this way .
+
+// VArious methods of object .
+console.log(Object.keys(tinderuse));//THus Object.keys(object_name ) prints all the keys of object in the form of array.
+console.log(Object.values(tinderuse));//THus Object.keys(object_name ) prints all the values of object in the form of array.
+console.log(Object.entries(tinderuse));//THus Object.keys(object_name ) prints all the keys and values of object in the form of array.
+//output :-
+// [ 'id', 'name', 'email' ]
+// [ '123', 'Madhura ', 'madhura@yahoo.com' ]
+// [
+//   [ 'id', '123' ],
+//   [ 'name', 'Madhura ' ],
+//   [ 'email', 'madhura@yahoo.com' ]
+// ]
+console.log(tinderuse.hasOwnProperty("id"));//maily tells the mention property is present or not in object.
 
 
-//To define function in javascript.
-myObj.greeting = function()//Thus , a function has been declared here as a greeting 
-{
-     console.log("Hello JS User");
+//D sturcture of Array
+// Object destructuring in JavaScript is a way to quickly extract values from an object and store them in variables. Instead of accessing properties one by one using object.propertyName, you can use {} to pick multiple properties at once.
+const course = {
+    course_name : "Javascript",
+    Fees :  999,
+    Course_insturctor : "Chai aur code",
 };
 
-myObj.greeting2 = function()//A function has been declared ,along with we have also use data interpolation to get the value of name from myObj using this.name("this " keyword is used as it is present in same object.)
-{
-     console.log(`Hello JS User , ${this.name}`);
-};
+console.log(course.Course_insturctor);
 
-console.log(myObj);
-console.log(myObj.greeting());
-console.log(myObj.greeting2());
-//output
+//Another way of calling values of keys from object in the D stucture format.
+const {Course_insturctor }= course;
+console.log(Course_insturctor);//here we destructue the object , thus the value of key can be accessed without "." operator and cbject name. 
+
+const {Course_insturctor : instructor }= course;//here we have done destructure of object and other short name have been given to that long key , thus it is easier to call that key next time.
+console.log(instructor);
+
+//JSOn // backened infomation data is mainly in the form of JSON file
+//here the keys are also mentioned in inverted commas to represent them as string , along with that values of any data type string , num etc.'
+
+//It is also sometimes store in the form of array as below :-
+// [{
+
+// }
+
 // {
-//     name: 'Swamini',
-//     age: 20,
-//     location: 'Pune',
-//     email: 'abc@gmail.com',
-//     isLoggedIn: false,
-//     lastLoggeddays: [ 'Monday', 'Tuesday' ],
-//     fullname: 'Madhura Lahu Narkhede',
-//     greeting: [Function (anonymous)],
-//     greeting2: [Function (anonymous)],
-//     [Symbol()]: 'mykey1'
-//   }
-//   Hello JS User
-//   undefined
-//   Hello JS User , Swamini
-//   undefined
+
+// }]
+
 
 
