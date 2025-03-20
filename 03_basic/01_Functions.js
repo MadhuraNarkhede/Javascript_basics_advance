@@ -40,7 +40,7 @@ console.log(loggIn(" "))//just logged in ,
 
 console.log(loggIn())//undefined just logged in ,
 
-nction loginUserMessage(username = "sam"){//default value as " sam " been passed.
+function loginUserMessage(username = "sam"){//default value as " sam " been passed.
     if(!username){
         console.log("PLease enter a username");
         return
@@ -48,8 +48,8 @@ nction loginUserMessage(username = "sam"){//default value as " sam " been passed
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage())//Sam justed logged in//Hitesh just logged in
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage())//Sam justed logged in
+// console.log(loginUserMessage("hitesh"))//Hitesh just logged in
 
 function calculateCartPrice(val1, val2, ...num1){//"..." rest operator that unifies all the passed argument into a particular aaray.
     return num1
