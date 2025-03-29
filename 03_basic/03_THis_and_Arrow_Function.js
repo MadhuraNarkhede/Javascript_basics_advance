@@ -86,7 +86,7 @@ chai()
 
 const myArray = [1,2,3]
 myArray.forEach( function () {})
-myArray.forEach(  () =>   ())
+myArray.forEach(  () => (n1 + n2))
 myArray.forEach(  () =>  {}) 
 
 // Differences Between Arrow Functions and Normal Functions in JavaScript
