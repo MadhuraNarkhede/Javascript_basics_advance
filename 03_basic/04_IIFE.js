@@ -1,6 +1,6 @@
 //Immediate invoked function expressions.(IIFE)
 // It allows ua to execute our function very fastly and also doesnot cause any pollution to function due to global scope variables.
-// Syntax = ( function defination (Normal or Arrow))();
+// Syntax = ( function defination (Normal or Arrow function))();
 
 (function chai ()//named IIFE
 {
