@@ -49,7 +49,7 @@ val1 = null ?? 10 ?? 20
 
 console.log(val1);
 
-// Terniary Operator
+// Terniary Operator // It allows us to write conditional statement in one go , and in one line.
 
 // condition ? true : false
 

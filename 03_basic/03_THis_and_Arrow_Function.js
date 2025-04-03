@@ -12,18 +12,19 @@
 
 // console.log(user.welcomemessage());//gives the current context.
  
-// // const user = {
-// //     name : "Madhura",
-// //     price : 999,
-// //     welcomemessage: function()
-// //     {
-// //         console.log(`${this.name},welcome to website.`);
+// const user = {
+//     name : "Madhura",
+//     price : 999,
+//     welcomemessage: function()
+//     {
+//         console.log(`${this.name},welcome to website.`);
         
-// //     }
+//     }
     
-// // }
+// }
 
-// // console.log(user.welcomemessage());//Madhura,welcome to website.
+// console.log(user.welcomemessage());
+//ouput :-Madhura,welcome to website.
 // // undefined(because welcomemessage does not return any value thus while its execution we get only logged statment and undefined )
 
 // //Biggest GLobal object in js is Windows.
@@ -43,18 +44,18 @@
 //     console.log(user1.welcomemessage())
 //     user1.name = "Narkhede"
 //     console.log(user1.welcomemessage())
-// //When no current context is present int a particular scope then the compiler refers to a empty object.The current cintext is mainly defined using scopes.
+// //When no current context is present int a particular scope then the compiler refers to a empty object.The current context is mainly defined using scopes.
 
 
 // console.log(this);//{}
 
-// // function chai()
-// // { username = "Madhura",
-// //     console.log(this);//not an empty fuctipn but gives information of other variables
-// //     console.log(chai.username)//this syntax is only used for object s thus gives error;
+// function chai()
+// { username = "Madhura",
+//     console.log(this);//not an empty fuctipn but gives information of other variables
+//     console.log(chai.username)//this syntax is only used for object s thus gives error;
     
-// // }
-// // chai();
+// }
+// chai();
 
 // //Arrow Function
 // //SYntax () => {function defination}
@@ -64,6 +65,7 @@ username = "Madhura";
 console.log(this);//use same as that of normal function.//oit gives the empty object
 
 }
+
 
 chai()
 
@@ -84,10 +86,10 @@ chai()
 
 //Arrow function with array
 
-const myArray = [1,2,3]
-myArray.forEach( function () {})
-myArray.forEach(  () => (n1 + n2))
-myArray.forEach(  () =>  {}) 
+// const myArray = [1,2,3]
+// myArray.forEach( function () {})
+// myArray.forEach(  () => (n1 + n2))
+// myArray.forEach(  () =>  {}) 
 
 // Differences Between Arrow Functions and Normal Functions in JavaScript
 // Syntax:
