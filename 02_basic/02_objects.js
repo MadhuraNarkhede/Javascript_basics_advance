@@ -23,7 +23,7 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser)// It allows us to not make any changes after frrezing any paticulat object.
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
