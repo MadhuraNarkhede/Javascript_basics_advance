@@ -136,3 +136,42 @@ tempList[2].style.color = "  green "
  const tempList = document.getElementByClassName('li')
  tempList //It will store all 'li' elements in HTML collection thus to convert it in array use
  Array.from(tempList) -->
+
+ <!-- Difference between nodelist and HTML Collection
+  ✅ NodeList
+Returned by:
+
+document.querySelectorAll()
+
+parentNode.childNodes
+
+Can contain:
+
+All node types (elements, text, comments)
+
+Static (most of the time):
+
+Doesn't update automatically if the DOM changes (except childNodes)
+
+Has forEach() method
+
+✅ HTMLCollection
+Returned by:
+
+document.getElementsByClassName()
+
+document.getElementsByTagName()
+
+element.children
+
+Contains:
+
+Only element nodes (no text or comment nodes)
+
+Live:
+
+Updates automatically when the DOM changes
+
+Doesn't support forEach() directly (you can convert to an array)
+
+ -->
