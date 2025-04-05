@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color : white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+  <div >
+     <h1 id="title" class="heading">
+        DOM Learning on Chai aur code
+        <span style ="display:none;"> test text</span>
+    </h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+     <p>Lorem ipsum dolor sit.</p>
+     <input type="password" name="Password" placeholder="Password">
+     <ul>
+        <li class="li">one</li>
+        <li class="li">two</li>
+        <li class="li">three</li>
+     </ul>
+  </div>
+</body>
+</html>
+
+<!-- We get various element so this page using following code :--
+ document.getElementById()-to get aby element using id. 
+ document.getElementByClassName()-to get aby element using className.
+ document.getAttribute()-to get aby element using Attribute.
+ 
+ We can also set attributes value using :- setAttribute()
+ 
+ We can also add style using :-
+ const title = document.getElementById('title')
+ title.style.backgroundColor = 'green'-->
+
+ <!-- <Example:->
+    const title
+VM529:1 Uncaught SyntaxError: Missing initializer in const declarationUnderstand this errorAI
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​DOM Learning on Chai aur code​</h1>​
+
+<h1 id=​"title" class=​"heading">​DOM Learning on Chai aur code​</h1>​
+VM645:2 Uncaught SyntaxError: Unexpected token '<'Understand this errorAI
+document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('className')
+null
+document.getElementsByClassName()
+VM1001:1 Uncaught TypeError: Failed to execute 'getElementsByClassName' on 'Document': 1 argument required, but only 0 present.
+    at <anonymous>:1:10
+(anonymous) @ VM1001:1Understand this errorAI
+document.getElementsByClassName('bg-black')
+HTMLCollection [body.bg-black]0: body.bg-blacklength: 1[[Prototype]]: HTMLCollection
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('h1')
+null
+const title = document.getElementById('title')
+undefined
+title
+<h1 id=​"title" class=​"heading">​DOM Learning on Chai aur code​</h1>​
+title.style.color="red'
+VM1686:1 Uncaught SyntaxError: Invalid or unexpected tokenUnderstand this errorAI
+title.style.color="red"
+'red
+ </Example:-> -->
+
+ <!-- Now we have to get content of the web page , then we mainly use , textContent , innertext and innerHTML
+  
+ textContent :- it shows all the part along with hidden content of the web page.
+ innerText :- it shows only those content that are visible on web page.
+ innerHTML :- it shows all content along with supporting HTML tag.  -->
+
+ <!-- example 
+  title.textContent
+
+'\n        DOM Learning on Chai aur code\n         test text\n    '
+title.innerHTML
+'\n        DOM Learning on Chai aur code\n        <span style="display:none;"> test text</span>\n    '
+title.innertext
+undefined
+title.innerText
+'DOM Learning on Chai aur code'-->
+
+
+
+<!-- we can also select query using queryselector() 
+ 
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit.​</h2>​
+document.querySelectorAll('h2')
+NodeList(3) [h2, h2, h2]0: h21: h22: h2length: 3[[Prototype]]: NodeList
+document.querySelector('input')
+<input type=​"password" name=​"Password" placeholder=​"Password">​
+const passowrd = document.querySelector('input')
+undefined
+passowrd
+<input type=​"password" name=​"Password" placeholder=​"Password">​
+passowrd.style.fontStyle="italic"
+'italic'
+passowrd.style.backgroundColor="grey"
+'grey'
+-->
+
+<!-- QuerySelectorAll - it mainly store sthe values in NodeList (which is like array , but not actually a rray ).
+ const tempList = document.querySelectorAll('li')
+undefined
+tempList
+NodeList(3) [li, li, li]
+tempList.style.color = " green "
+VM4345:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:22
+(anonymous) @ VM4345:1Understand this errorAI
+tempList[0].style.color = " pink  "
+' pink  '
+tempList[0].style.color = " orange  "
+' orange  '
+tempList[2].style.color = " forest green "
+' forest green '
+tempList[2].style.color = "  green "
+'  green ' -->
+
+
+<!-- TO convert nodelist and HTML collection to array use the method Array.from()
+ Example :-
+ const tempList = document.getElementByClassName('li')
+ tempList //It will store all 'li' elements in HTML collection thus to convert it in array use
+ Array.from(tempList) -->
