@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM manipulation</title>
+</head>
+<body style = "background-color: black; color :white ; font-size:100px;">
+ <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+ </div>
+</body>
+<script>
+       const parent = document.querySelector('.parent')
+//     console.log(parent);
+//     console.log(parent.children); //this gives all the inner element of a particular query , example :- for above parent it will give all the days of a week.(in the form of HTML Collection)
+//     console.log(parent.children[0]);//it gives the element of the particular index.
+//     console.log(parent.children[0].innertext);
+//     //loop on the HTML Collection
+//  for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerText);
+//     }
+
+//     parent.children[2].style.backgroundColor = "red"
+
+//     console.log(parent.firstElementChild);//It mainly gives the first child of the parent element.
+//     console.log(parent.lastElementChild);//It mainly gives the last child of the parent element.
+
+//     //Now how to get parent element with the help of the child element.
+
+    const dayone = document.querySelector('.day')
+    console.log(dayone);
+    console.log(dayone.parentElement);//It gives the parent element of the selected element.
+    console.log(dayone.nextElementSibling);//It gives the sibling element of the selected element.
+
+    //TO get all the tree structure.
+    console.log("Nodes :",parent.childNodes);//
+    
+
+    
+    
+
+    
+</script>
+</html>
