@@ -47,3 +47,5 @@ const min = 20;
 const max = 30;
 console.log((Math.floor(Math.random() * (max - min +1) ))+min);//(max - min) to get the values on that range and (+1) to avoid getting 0 amd (+min) to get the perfect number in that range. 
 
+num = 1000.00089565897654684354;
+console.log(num.toFixed(2));//to allows us to get the fixed number after the decimal.
