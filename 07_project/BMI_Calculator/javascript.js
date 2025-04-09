@@ -3,7 +3,7 @@ console.log(form);
 
 
 form.addEventListener('submit', function(e)
-{e.preventDefault();
+{e.preventDefault();//it allows us to processing of data to server side and allows us the use the data in the current function.
     const height = parseInt(document.querySelector('#height').value);
     const weight = parseInt(document.querySelector('#weight').value);
     const result = document.querySelector('.result');
