@@ -19,7 +19,7 @@
 // 12:18:50 PM
 
 //TO declare the date 
-let date1 = new Date(2025 , 2 , 16, 3, 14);//Date(Year , Month (Satring from index 0), date , hour , miute)
+let date1 = new Date(2025 , 2 , 16, 3, 14);//Date(Year , Month (Satring from index 0), date , hour , minute)
 console.log(date1.toString());
 
 let date2 = new Date("2023-3-16")//YY-MM-DD

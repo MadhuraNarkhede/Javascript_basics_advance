@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(151, 112, 214);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: pink;
+    width:500px;
+    height:300px;
+    margin-top:200px;
+    text-align: center;
+    color:rgb(238, 105, 17);
+}
+
+#clock{
+    width:250px;
+    height:150px;
+    background-color: azure;
+    margin-left:125px;
+    color:rgb(20, 20, 20);
+    display:flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    
+}
